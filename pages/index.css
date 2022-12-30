@@ -55,7 +55,7 @@
   top: 30px;
   left: 30px;
   width: 125px;
-  length: 142px;
+  height: 142px;
 }
 
 .nav__links {
@@ -89,11 +89,13 @@
 }
 
 .header__title__one {
-  font-family: Noto Serif;
+  font-family: Noto serif;
   font-style: italic;
   font-size: 60px;
   line-height: 72px;
   color: #2f80ed;
+  margin-left: 80px;
+  margin-bottom: 28px;
 }
 
 .header__title__two {
@@ -102,6 +104,9 @@
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
+  margin-left: 80px;
+  margin-top: 0;
+  margin-bottom: 28px;
 }
 
 .header__description {
@@ -111,8 +116,6 @@
   margin-left: 80px;
   max-width: 683px;
   font-family: Noto Serif;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 .header__image {
