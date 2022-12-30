@@ -23,32 +23,32 @@
     </style>
   </head>
   <div class="page">
-    <header class="header">
+    <section class="header">
+      <img
+        src="./images/logo_coffee_shop.svg"
+        alt="coffee shop Logo"
+        class="logo"
+      />
       <nav class="nav">
-        <img
-          src="./images/logo_coffee_shop.svg"
-          alt="coffee shop Logo"
-          class="logo"
-        />
         <ul class="nav__links">
           <li>
-            <a class="nav__link" href="#anchor-menu">Menu</a>
+            <a class="nav__link">Menu</a>
           </li>
           <li>
-            <a class="nav__link" href="#anchor-recipes">Recipes</a>
+            <a class="nav__link">Recipes</a>
           </li>
           <li>
-            <a class="nav__link" href="#anchor-book-a-table">Book a table</a>
+            <a class="nav__link">Book a table</a>
           </li>
           <li>
-            <a class="nav__link" href="#anchor-contacts">Contacts</a>
+            <a class="nav__link">Contacts</a>
           </li>
         </ul>
       </nav>
-      <h1 class="header__title">
-        <span class="header__title__one"> Specialty coffee </span>
-        <span class="header__title__two"> in the Practicum library </span>
-      </h1>
+      <span class="header__title">
+        <h1 class="header__title__one">Specialty coffee</h1>
+        <h1 class="header__title__two">in the Practicum library</h1>
+      </span>
       <p class="header__description">
         Welcome to our study zone! We've got the coffee to energize you and the
         cozy vibes to help you get creative.
@@ -70,8 +70,8 @@
         </p>
         <p class="header__address">200 Success Avenue, The Town of Practicum</p>
       </div>
-    </header>
-    <menu class="menu">
+    </section>
+    <section class="menu">
       <div class="menu__title">
         <h1 class="menu__title__content">Menu</h1>
       </div>
@@ -185,8 +185,8 @@
           <div class="card__list_divider"></div>
         </div>
       </div>
-    </menu>
-    <recipes class="recipes">
+    </section>
+    <section class="recipes">
       <div class="recipes__title">
         <h1 class="recipes__title__content">Recipes</h1>
       </div>
@@ -231,8 +231,8 @@
           </div>
         </div>
       </div>
-    </recipes>
-    <reservation class="reservation">
+    </section>
+    <section class="reservation">
       <div class="reservation__title">
         <h1 class="reservation__title__header">Book a table</h1>
       </div>
@@ -246,7 +246,9 @@
             placeholder="Name Surname"
           />
 
-          <label for="number" class="form__label">Number of guests *</label>
+          <label for="number" class="form__label" min="1" max="8"
+            >Number of guests *</label
+          >
           <input
             type="number"
             class="form__input"
@@ -280,7 +282,7 @@
           </div>
         </fieldset>
       </form>
-    </reservation>
+    </section>
     <section class="about">
       <h2 class="about__title">About the coffee shop</h2>
       <div class="about__content">
@@ -299,6 +301,38 @@
       <div class="about__circle about__circle_animation_blured"></div>
       <div class="about__circle"></div>
     </section>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="content__logo">
+          <h1>Practicum</h1>
+        </div>
+        <div class="content__socials">
+          <div class="content__social_heading">Social media</div>
+          <ul class="content__list">
+            <li class="content__list__list_item">
+              <a class="content__list__social_link">
+                <img
+                  src="/images/facebook_white.svg"
+                  alt="Facebook Logo"
+                  class="content__list__social_icon"
+                />
+                Facebook
+              </a>
+            </li>
+            <li class="content__list__list_item">
+              <a class="content__list__social_link">
+                <img
+                  src="/images/instagram_white.svg"
+                  alt="Instagram Logo"
+                  class="content__list__social_icon"
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">@ 2022 Jose Maldonado</div>
+    </footer>
   </div>
 </html>

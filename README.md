@@ -13,4 +13,4 @@ This is the second project of the Web Development program at Practicum. It was c
 
 ## Plan on improving the project
 
-Add your ideas here :)
+I would love to have the form send a fake confirmation email to the email that is input in the "Your email" field! :D
