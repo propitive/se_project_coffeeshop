@@ -22,13 +22,9 @@
   margin-top: 24px;
   margin-left: 80px;
   max-width: 438px;
-  font-family: Noto serif, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 0;
 }
 
-.recipes__subtitle__content {
+.recipes__subtitle-content {
   font-family: Noto serif, Arial, sans-serif;
   font-size: 20px;
   line-height: 30px;
