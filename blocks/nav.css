@@ -1,11 +1,13 @@
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  margin-top: 30px;
+  margin-right: 80px;
 }
 
 .nav__links {
@@ -13,10 +15,8 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
-  position: absolute;
-  right: 80px;
-  top: 30px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .nav__link {

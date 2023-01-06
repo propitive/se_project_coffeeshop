@@ -11,7 +11,7 @@
     <meta name="author" content="Jose Maria Maldonado Jr" />
     <meta name="keywords" content="Coffee, Coffee Shop, Bucks of Star" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="icon" href="./favicon.ico.ico" />
+    <link rel="icon" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,16 +34,16 @@
         <nav class="nav">
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Menu</a>
+              <a class="nav__link" href="#menu">Menu</a>
             </li>
             <li>
-              <a class="nav__link">Recipes</a>
+              <a class="nav__link" href="#recipes">Recipes</a>
             </li>
             <li>
-              <a class="nav__link">Book a table</a>
+              <a class="nav__link" href="#book-a-table">Book a table</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -73,7 +73,7 @@
       </header>
 
       <main>
-        <section class="menu">
+        <section class="menu" id="menu">
           <h2 class="menu__title">Menu</h2>
           <p class="menu__subtitle">
             <span
@@ -87,7 +87,7 @@
           </p>
           <div class="menu__cards">
             <div class="card">
-              <h2 class="card__title">Filter</h2>
+              <h3 class="card__title">Filter</h3>
               <ul class="card__list">
                 <li class="card__list-item">
                   Regular (12oz)<span class="card__list-divider"></span>$1
@@ -157,22 +157,16 @@
             </div>
           </div>
         </section>
-        <section class="recipes">
+        <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
-            <span class="recipes__subtitle-content"
-              >Check out some recipes we've collected for</span
-            >
-            <span class="recipes__subtitle-content"
-              >your home-brewing convenience:</span
-            >
+            <span>Check out some recipes we've collected for</span>
+            <span>your home-brewing convenience:</span>
           </p>
           <div class="recipes__videos">
             <div class="recipes__iframe">
               <iframe
                 class="recipes__youtube"
-                width="480"
-                height="273"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc"
                 allowfullscreen
               >
@@ -185,8 +179,6 @@
             <div class="recipes__iframe">
               <iframe
                 class="recipes__youtube"
-                width="480"
-                height="273"
                 src="https://www.youtube.com/embed/st571DYYTR8"
                 allowfullscreen
               >
@@ -198,10 +190,8 @@
             </div>
           </div>
         </section>
-        <section class="reservation">
-          <div class="reservation__title">
-            <h2 class="reservation__title-header">Book a table</h2>
-          </div>
+        <section class="reservation" id="book-a-table">
+          <h2 class="reservation__title">Book a table</h2>
           <form class="form reservation__form">
             <fieldset class="form__fieldset">
               <label for="name" class="form__label">Name *</label>
@@ -218,6 +208,9 @@
                 class="form__input"
                 id="number"
                 placeholder="1-8"
+                min="1"
+                max="8"
+                required
               />
 
               <label for="datetime-local" class="form__label"
@@ -237,7 +230,7 @@
                 placeholder="email@email.com"
               />
 
-              <button type="button" class="form__button">Book a table</button>
+              <button type="submit" class="form__button">Book a table</button>
 
               <div class="form__checkbox-section">
                 <input type="checkbox" class="form__checkbox" id="checkbox" />
@@ -248,21 +241,21 @@
             </fieldset>
           </form>
         </section>
-        <section class="about">
+        <section class="about" id="contacts">
           <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
-            <span class="about__paragraph">
+            <p class="about__paragraph">
               Our coffee shop is located in the Practicum Library's hall. It
               features 6 tables and free WiFi.
-            </span>
-            <span class="about__paragraph">
+            </p>
+            <p class="about__paragraph">
               Our main mission is keeping guests cozy and energized.
-            </span>
-            <span class="about__paragraph">
+            </p>
+            <p class="about__paragraph">
               Besides that, we try to reduce our environmenta impact - so we
               don't sell single-use cups. But you can buy one of our reusable
               cups!
-            </span>
+            </p>
           </div>
           <div class="about__circle about__circle_animation_blured"></div>
           <div class="about__circle"></div>
@@ -271,16 +264,23 @@
 
       <footer class="footer">
         <div class="footer__content">
-          <div class="footer__logo">
+          <img
+            src="../se_project_coffeeshop/images/practicum_logo.svg"
+            alt="Practicum Logo"
+            width="116"
+            height="21"
+          />
+
+          <!--  <div class="footer__logo">
             <h2>Practicum</h2>
-          </div>
+          </div> -->
           <div>
-            <div class="footer__social-heading">Social media</div>
+            <h2 class="footer__social-heading">Social media</h2>
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a class="footer__social-link">
                   <img
-                    src="/images/facebook_white.svg"
+                    src="../se_project_coffeeshop/images/facebook_white.svg"
                     alt="Facebook Logo"
                     class="footer__social-icon"
                   />
@@ -290,7 +290,7 @@
               <li class="footer__list-item">
                 <a class="footer__social-link">
                   <img
-                    src="/images/instagram_white.svg"
+                    src="../se_project_coffeeshop/images/instagram_white.svg"
                     alt="Instagram Logo"
                     class="footer__social-icon"
                   />
@@ -300,7 +300,7 @@
             </ul>
           </div>
         </div>
-        <div class="footer__copyright">@ 2022 Jose Maldonado</div>
+        <p class="footer__copyright">© 2022 Jose Maldonado</p>
       </footer>
     </div>
   </body>

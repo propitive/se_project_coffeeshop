@@ -1,26 +1,9 @@
 .card {
   max-width: 600px;
-  min-width: 600px;
-  flex-basis: 100%;
+  flex-basis: 50%;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.card:nth-of-type(2n) {
-  list-style: none;
-  max-width: 600px;
-  min-width: 600px;
-  flex-basis: 100%;
-  padding-left: 100px;
-}
-
-.card:nth-of-type(3n) {
-  list-style: none;
-  max-width: 600px;
-  min-width: 600px;
-  flex-basis: 100%;
-  padding-top: 100px;
 }
 
 .card__title {
@@ -43,7 +26,7 @@
 .card__list-item {
   display: flex;
   justify-content: space-between;
-  font-family: Noto serif, Arial, sans-serif;
+  font-family: Noto serif, "Times New Roman", serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;

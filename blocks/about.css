@@ -9,6 +9,7 @@
 
   100% {
     scale: 1.5;
+    opacity: 0;
   }
 }
 
@@ -25,6 +26,7 @@
   max-width: 251px;
   margin-top: 100px;
   margin-left: 80px;
+  margin-bottom: 0;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   font-size: 44px;
@@ -40,18 +42,19 @@
   max-width: 660px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .about__paragraph {
-  font-family: Noto serif, Arial, sans-serif;
+  font-family: Noto serif, "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .about__paragraph:last-of-type {
-  font-family: Noto serif, Arial, sans-serif;
+  font-family: Noto serif, "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
@@ -73,6 +76,6 @@
   animation-name: pulsate;
   animation-duration: 1.49s;
   animation-timing-function: ease-in-out;
-  animation-delay: 0;
+  animation-delay: 0s;
   animation-iteration-count: infinite;
 }
