@@ -3,7 +3,7 @@
   flex-direction: column;
   max-width: 385px;
   border: none;
-  margin: 0;
+  margin: 0 auto 0;
   padding: 0;
   width: 100%;
 }
@@ -24,6 +24,8 @@
   font-size: 20px;
   line-height: 30px;
   color: #838383;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .form__button {
@@ -39,16 +41,18 @@
   line-height: 20px;
   background-color: #2f80ed;
   border: 0px;
+  padding: 0;
 }
 
 .form__button:hover {
   opacity: 70%;
 }
 
-.form__checkbox-section {
+.form__fieldset:last-of-type {
   display: flex;
   flex-direction: row;
   margin: 0 auto 120px;
+  justify-content: center;
 }
 
 .form__checkbox {

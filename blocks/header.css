@@ -25,27 +25,21 @@
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
 }
 
-.header__title-one {
+.header__span-accent {
   font-family: Noto serif, "Times New Roman", serif;
   font-style: italic;
   font-size: 60px;
   line-height: 72px;
   color: #2f80ed;
   margin-bottom: 28px;
-}
-
-/* .header__title-two {
   display: block;
-  font-family: "Inter", Arial, sans-serif;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 72px;
-  margin-left: 80px;
-  margin-top: 0;
-  margin-bottom: 28px;
-} */
+}
 
 .header__description {
   font-size: 20px;
@@ -76,14 +70,19 @@
   padding: 0 80px 0;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+.header__paragraph {
   font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
+  margin: 0;
 }
 
-.header__paragraph {
+.header__hours {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
