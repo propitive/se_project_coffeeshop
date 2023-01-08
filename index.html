@@ -58,15 +58,11 @@
           class="header__image"
         />
         <div class="header__footer">
-          <p class="header__hours">
-            <span class="header__paragraph">Hours:</span>
-            <span class="header__paragraph"
-              >Monday – Friday (10:00 – 19:00)</span
-            >
-            <span class="header__paragraph"
-              >Saturday – Sunday (11:00 –18:00);</span
-            >
-          </p>
+          <div class="header__hours">
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
+            <p class="header__paragraph">Saturday – Sunday (11:00 –18:00)</p>
+          </div>
           <p class="header__paragraph">
             200 Success Avenue, The Town of Practicum
           </p>
@@ -76,15 +72,10 @@
       <main>
         <section class="menu" id="menu">
           <h2 class="menu__title">Menu</h2>
+
           <p class="menu__subtitle">
-            <span
-              >We brew coffee from locally roasted, Fairtrade certified beans
-              and use</span
-            >
-            <span
-              >biodegradable cups. All teas from our collection are
-              $2/cup.</span
-            >
+            We brew coffee from locally roasted, Fairtrade certified beans and
+            use biodegradable cups. All teas from our collection are $2/cup.
           </p>
           <div class="menu__cards">
             <div class="card">
@@ -113,7 +104,7 @@
             </div>
 
             <div class="card">
-              <h2 class="card__title">Espresso</h2>
+              <h3 class="card__title">Espresso</h3>
               <ul class="card__list">
                 <li class="card__list-item">
                   Macchiato<span class="card__list-divider"></span>$2.25
@@ -132,9 +123,8 @@
                 </li>
               </ul>
             </div>
-
             <div class="card">
-              <h2 class="card__title">Baked Goods</h2>
+              <h3 class="card__title">Baked Goods</h3>
               <ul class="card__list">
                 <li class="card__list-item">
                   Almond Croissant<span class="card__list-divider"></span>$2
@@ -201,6 +191,7 @@
                 class="form__input"
                 id="name"
                 placeholder="Name Surname"
+                required
               />
 
               <label for="number" class="form__label">Number of guests *</label>
@@ -221,6 +212,7 @@
                 type="datetime-local"
                 class="form__input"
                 id="datetime-local"
+                required
               />
 
               <label for="email" class="form__label">Your email *</label>
@@ -229,13 +221,19 @@
                 class="form__input"
                 id="email"
                 placeholder="email@email.com"
+                required
               />
             </fieldset>
             <fieldset class="form__fieldset">
               <button type="submit" class="form__button">Book a table</button>
             </fieldset>
             <fieldset class="form__fieldset">
-              <input type="checkbox" class="form__checkbox" id="checkbox" />
+              <input
+                type="checkbox"
+                class="form__checkbox"
+                id="checkbox"
+                required
+              />
               <label for="checkbox" class="form__label"
                 >I agree with the terms of use</label
               >

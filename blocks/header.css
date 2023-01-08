@@ -25,6 +25,9 @@
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
 }
 
 .header__span-accent {
@@ -33,7 +36,6 @@
   font-size: 60px;
   line-height: 72px;
   color: #2f80ed;
-  margin-bottom: 28px;
   display: block;
 }
 
